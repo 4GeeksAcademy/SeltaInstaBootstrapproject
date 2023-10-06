@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Instagram bootstrap</title>
+</head>
+<body>
+    <div class="container-fluid ">
+        <!---->
+         <!--header-->
+          <div class="row justify-content-between bg-light mb-3">
+        
+            <div class="col-9 d-flex pt-2">
+            
+            <p class="fs-3 "> <i class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+        
+        <div class="col d-flex  pt-2 pe-5 pb-4"> 
+          
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Create a new post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6>Caption:</h6>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Add the caption of your post here</label>
+        </div>
+        <div class="2buttons pt-2">
+       
+        <button type="button" class="btn btn-light"><i class="fa-solid fa-camera-retro"></i></button>
+        <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+      
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dropdown ms-3">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-gear"></i>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Profile</a></li>
+    <li><a class="dropdown-item" href="#">Acessibility</a></li>
+    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#" style="color:red;">Log out</a></li>
+  </ul>
+</div>
+
+        </div>
+      </div>
+                
+                 
+    
+    <ul class="nav nav-pills mb-3 justify-content-center " id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-secondary me-2" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"  role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-secondary " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-regular fa-square"></i></button>
+      </li>
+      
+    </ul>
+    <!-- 3 colums imgs -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="row pb-4">
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=1" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=2" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=3" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=4" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=5" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=6" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+    </div>
+    <div class="row pb-4">
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=7" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=8" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+        <div class="col"> <img src="https://loremflickr.com/320/240?random=9" width="600px" class="img-fluid" alt="Responsive image"/> </div>
+    </div>
+  </div>
+  <!-- 1 col img-->
+      
+  <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    
+
+        <!-- 1 col img-->
+        <div class="col-6 mx-auto border border-dark border-2 rounded mb-3">
+          <!-- header-->
+          <div class="row justify-content-between">
+            <div class="col-10 ms-1"><h4>Cats</h4></div>
+            <div class="col ms-4"><p class="fs-6">30/09</p></div>
+           
+          </div>
+          <!-- img-->
+        <div class="row"> 
+          <img src="https://loremflickr.com/320/240?random=1" width="300px" class="img-fluid" alt="Responsive image"/> </div> 
+        <!-- description-->
+        <div class="row">
+          <div class="col-12 ms-1"><strong>777 like</strong></div>
+          <p class="col-12 mx-1 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-1 ms-1"><i class="fa-solid fa-heart"></i></div>
+          <div class="col-8 pb-2"><input class="form-control form-control-sm" type="text" placeholder="Comments..."></div>
+          <div class="col-1"><i class="fa-solid fa-ellipsis"></i></div>
+
+        </div>
+
+      </div>
+      <div class="col-6 mx-auto border border-dark border-2 rounded mb-3">
+        <!-- header-->
+        <div class="row justify-content-between">
+          <div class="col-10 ms-1"><h4>Cats</h4></div>
+          <div class="col ms-4"><p class="fs-6">30/09</p></div>
+         
+        </div>
+        <!-- img-->
+      <div class="row"> 
+        <img src="https://loremflickr.com/320/240?random=2" width="300px" class="img-fluid" alt="Responsive image"/> </div> 
+      <!-- description-->
+      <div class="row">
+        <div class="col-12 ms-1"><strong>777 like</strong></div>
+        <p class="col-12 mx-1 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-1 ms-1"><i class="fa-solid fa-heart"></i></div>
+        <div class="col-8 pb-2"><input class="form-control form-control-sm" type="text" placeholder="Comments..."></div>
+        <div class="col-1"><i class="fa-solid fa-ellipsis"></i></div>
+
+      </div>
+
+    </div>
+    <div class="col-6 mx-auto border border-dark border-2 rounded mb-3">
+      <!-- header-->
+      <div class="row justify-content-between">
+        <div class="col-10 ms-1"><h4>Cats</h4></div>
+        <div class="col ms-4"><p class="fs-6">30/09</p></div>
+       
+      </div>
+      <!-- img-->
+    <div class="row"> 
+      <img src="https://loremflickr.com/320/240?random=3" width="300px" class="img-fluid" alt="Responsive image"/> </div> 
+    <!-- description-->
+    <div class="row">
+      <div class="col-12 ms-1"><strong>777 like</strong></div>
+      <p class="col-12 mx-1 ">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-1 ms-1"><i class="fa-solid fa-heart"></i></div>
+      <div class="col-8 pb-2"><input class="form-control form-control-sm" type="text" placeholder="Comments..."></div>
+      <div class="col-1"><i class="fa-solid fa-ellipsis"></i></div>
+
+    </div>
+
+  </div>
+   
+
+
+
+
+      </div>
+      
+    </div>
+       
+       
+      
+    </div>
+  </div>
+    <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"
+        ></script>
+
+
+</body>
+</html>
+
+
+
